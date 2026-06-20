@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre — Acervo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<style>
+  .pagina-sobre { padding: 72px 0 100px; }
+  .pagina-sobre .intro-sobre {
+    max-width: 640px;
+    margin-bottom: 64px;
+  }
+  .pagina-sobre h1 {
+    font-family: var(--fonte-display);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .pagina-sobre .intro-sobre p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--fg-suave);
+  }
+  .bloco-texto-sobre {
+    max-width: 640px;
+    margin-bottom: 56px;
+  }
+  .bloco-texto-sobre h2 {
+    font-family: var(--fonte-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .bloco-texto-sobre p {
+    font-size: 1.02rem;
+    line-height: 1.75;
+    color: var(--fg-suave);
+    margin-bottom: 14px;
+  }
+  .bloco-texto-sobre a { color: var(--acento); border-bottom: 1px solid currentColor; }
+</style>
+</head>
+<body>
+
+<div class="textura-papel" aria-hidden="true"></div>
+
+<header class="cabecalho">
+  <div class="container cabecalho-interno">
+    <a href="index.html" class="marca">
+      <span class="selo">A</span>
+      Acervo
+    </a>
+    <nav class="nav-principal" aria-label="Navegação principal">
+      <a href="index.html">Acervo</a>
+      <a href="index.html#romance">Romance</a>
+      <a href="index.html#poesia">Poesia</a>
+      <a href="index.html#filosofia">Filosofia</a>
+      <a href="sobre.html" class="ativo">Sobre</a>
+    </nav>
+    <div class="acoes-cabecalho">
+      <button class="botao-tema" id="botaoTema" aria-label="Alternar modo noturno">
+        <svg class="icone-sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icone-lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="container pagina-sobre">
+  <div class="intro-sobre">
+    <span class="secao-eyebrow">O projeto</span>
+    <h1>Uma biblioteca que respeita quem lê.</h1>
+    <p>Acervo nasceu de uma ideia simples: livros em domínio público já pertencem a todo mundo, mas raramente são apresentados de um jeito que dê vontade de ler. Construímos esse espaço para mudar isso.</p>
+  </div>
+
+  <div class="bloco-texto-sobre" id="licenca">
+    <h2>O que é domínio público?</h2>
+    <p>No Brasil, uma obra entra em domínio público 70 anos após a morte do autor (contados a partir de 1º de janeiro do ano seguinte ao falecimento), conforme a Lei de Direitos Autorais (Lei 9.610/1998). A partir desse momento, qualquer pessoa pode reproduzir, adaptar e distribuir a obra livremente, sem precisar de autorização ou pagamento.</p>
+    <p>É por isso que autores como Machado de Assis, José de Alencar, Castro Alves, Camões e tantos outros podem ser publicados aqui, gratuitamente, para qualquer leitor.</p>
+  </div>
+
+  <div class="bloco-texto-sobre">
+    <h2>Como escolhemos as obras</h2>
+    <p>Priorizamos obras de relevância histórica e literária, organizadas por categoria, para facilitar a descoberta. O acervo está em constante crescimento — novos títulos são adicionados regularmente.</p>
+  </div>
+
+  <div class="bloco-texto-sobre">
+    <h2>Por que a leitura confortável importa</h2>
+    <p>Ler na tela é diferente de ler no papel. Por isso, todo livro aqui pode ser ajustado: tamanho e tipo da fonte, espaçamento entre linhas, largura do texto e tom da página, incluindo um modo noturno pensado para não cansar os olhos.</p>
+  </div>
+
+  <div class="bloco-texto-sobre">
+    <h2>Contato</h2>
+    <p>Encontrou um erro de digitação, quer sugerir uma obra ou relatar um problema técnico? Escreva para <a href="mailto:contato@acervo.exemplo">contato@acervo.exemplo</a>.</p>
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape-base">
+      <span>© 2026 Acervo — obras em domínio público</span>
+      <span>Feito para leitura, não para rolagem infinita</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/tema.js"></script>
+</body>
+</html>
